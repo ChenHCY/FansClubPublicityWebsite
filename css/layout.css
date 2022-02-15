@@ -1,0 +1,82 @@
+@import url(style.css);
+.wrap {
+    width: 890px;
+    height: 500px;
+    margin: 3rem auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    background-color: white;
+}
+
+.wrap .list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.wrap .list .item {
+    position: absolute;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.wrap .list .item>a>video {
+    width: 890px;
+    height: 500px;
+}
+
+.wrap .list .item .word{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 890px;
+    opacity: 1.5;
+}
+
+.wrap .list .item .word p{
+    font-size: 3rem;
+    color: red;
+    line-height: 2;
+    padding: 1rem 0;
+    text-align: left;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+.wrap .list .active {
+    z-index: 1;
+    opacity: 1;
+}
+
+.wrap .pointList {
+    position: absolute;
+    bottom: 70px;
+    right: 0%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.wrap .pointList .point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+    border: 2px solid black;
+    background-color: beige;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.wrap .pointList .current {
+    background-color: green;
+    transform: scale(1.5);
+}
+
+
+
+
+

@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('http://at.alicdn.com/t/font_2526200_dra74wlaxnj.woff2?t=1621069802615') format('woff2'), url('http://at.alicdn.com/t/font_2526200_dra74wlaxnj.woff?t=1621069802615') format('woff'), url('http://at.alicdn.com/t/font_2526200_dra74wlaxnj.ttf?t=1621069802615') format('truetype');
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: green;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/*body {
+  background: #fdf5e6;
+}*/
+
+section {
+  padding: 5rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    color:red;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 9%;
+  z-index: 10000;
+  background: green;
+}
+
+.header .logo {
+  font-weight: bolder;
+  color: red;
+  font-size: 3rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  font-family: 'Kaushan Script', cursive;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  background: green;
+}
+
+#menu-btn {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  padding: 0;
+  margin-top: 5rem;
+}
+
+.slide {
+  min-height: 93vh;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 2rem 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide .content {
+  width: 60rem;
+}
+
+.slide .content span {
+  font-size: 4rem;
+  font-family: 'Ma Shan Zheng', cursive;
+  color: #f00;
+  display: block;
+}
+
+.slide .content h3 {
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Kaushan Script', cursive;
+  padding: 1rem 0;
+}
+
+.swiper-pagination-bullet {
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid black;
+  background-color: beige;
+  border-radius: 5;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: green;
+}
+/*Header part, Basic set and Home page end*/
+
+/*About Part*/
+.about{
+  padding-top: 1rem;
+  background: #ffefd5;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap:2rem;
+}
+
+.user{
+  text-align: center;
+  width: 50%;
+}
+
+.user img{
+  margin:1rem 0;
+  border:1rem solid transparent; 
+  border-radius: 50%;
+  height: 45vh;
+  width: 40vh;
+}
+
+.row .contentWrapper {
+  flex:1 1 40rem;
+  text-align: center;
+}
+
+.row .content{
+  display: inline-block;
+  text-align: left;
+}
+
+.row .content h3{
+  font-size: 3.5rem;
+  color:black;
+  line-height: 1.8;
+  padding-top: 0.5rem;
+}
+
+.row .content h3 span{
+  color:black;
+  font-family: 'Ma Shan Zheng', cursive;
+}
+
+.row .content p{
+  font-size: 1.7rem;
+  color:black;
+  line-height: 1.8;
+  font-family: 'Kaushan Script', cursive;
+  padding-top: 1rem;
+}
+
+.row .content a{
+  font-size: 1.7rem;
+  color:var(--blue);
+  line-height: 1.8;
+  padding:1rem 0;
+}
+
+.row .content a:hover{
+  font-size: 1.7rem;
+  color:red;
+  line-height: 1.8;
+  padding:1rem 0;
+}
+
+.share{
+  position: relative;
+  top: 5rem;
+  text-align: center;
+}
+
+.share img{
+  height: 7rem;
+  width: 7rem;
+  line-height: 5rem;
+  margin:1rem;
+  font-size: 3.5rem;
+  color:white;
+  padding: 1rem;
+}
+
+.share img:hover{
+  transform: translateY(-20px);
+}
+
+/*About part css end*/
+
+/*TimeLine part css start*/
+.timeline{
+  background:#ffefd5;
+  padding-top: 2rem;
+}
+
+.page {
+  background: green;
+  margin-bottom: 7rem;
+  margin-top: 4rem;
+}
+
+.page:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.page .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page .content {
+  padding: 2rem;
+}
+
+.page .content h3 {
+  font-size: 2rem;
+  color: white;
+  line-height: 1.5;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.page .content p {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.timeline a {
+  text-decoration: none;
+  display: block;
+}
+
+.timeline li {
+  list-style-type: none;
+}
+
+.timeline .wrap .button {
+  width: 40px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  font-weight: 800;
+  background-color: white;
+  transform: translate(0, -50%);
+  font-size: 20px;
+  border: none;
+  z-index: 1;
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.timeline .wrap .button:hover {
+  width: 40px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  font-weight: 800;
+  background-color: white;
+  transform: translate(0, -50%);
+  font-size: 20px;
+  border: none;
+  z-index: 1;
+  text-align: center;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.timeline .wrap #Prev {
+  left: -5px;
+  border-radius: 0 100% 100% 0;
+  color: black;
+}
+
+.timeline .wrap #Next {
+  right: -5px;
+  border-radius: 100% 0 0 100%;
+  color: black;
+}
+
+/*TimeLine Part end*/
+
+/*Button navbar*/
+.bottom {
+  background: green;
+}
+
+.bottom .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  padding-left: 9%;
+  padding-top: 5rem;
+}
+
+.bottom .box-container .box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: wheat;
+  padding: 1rem 0;
+  font-family: 'Ma Shan Zheng', cursive;
+}
+
+.bottom .box-container .box p {
+  font-size: 2rem;
+  line-height: 2;
+  color: white;
+  padding: 1rem 0;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.bottom .box-container .box a {
+  font-size: 2rem;
+  line-height: 2;
+  color: white;
+  padding: 1rem 0;
+  font-family: 'Ma Shan Zheng', cursive;
+}
+
+.bottom .credit {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: white;
+  border-top: 0.1rem solid #ffefd5;
+  text-transform: lowercase;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.bottom .credit span {
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+}
+/*Bottom Part end*/
+
+/*Set up the menu max width*/
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  #menu-btn.fa-times {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .header {
+    padding: 2rem;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: green;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    font-size: 2rem;
+  }
+  .about {
+    gap: 3rem;
+  }
+  .about .image {
+    margin-top: 5rem;
+  }
+  .about .content .title {
+    font-size: 3rem;
+  }
+  .features .box-container .box.second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
