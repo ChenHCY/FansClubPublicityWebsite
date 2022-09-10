@@ -1,5 +1,5 @@
-# Star-Publicity-Website
-GNZ48 Fans Member Club Website | Web-Application | http://www.hcy0120.com/
+# Fans Club Publicity Website
+GNZ48 Fans Club Publicity Website Website | Web-Application | http://www.hcy0120.com/
 
 ● Devised a publicity website for around 1000 people fans club which included stars' text introduction, video and picture display, and support links to other publicity media. 
 
