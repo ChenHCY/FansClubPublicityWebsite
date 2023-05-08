@@ -8,3 +8,5 @@ Fans Club Publicity Website Website | Web-Application | http://www.hcy0120.com/
 ● Implemented a search bar for customers to search the star's video with a keyword.
 
 ● Made animation effects, including auto carousel background images, and the sliding timelines box, by utilizing JavaScript.
+
+![Publicity Website](https://user-images.githubusercontent.com/60770401/236742998-a96430de-6a6a-42fe-a496-4160991e2c21.jpg)
