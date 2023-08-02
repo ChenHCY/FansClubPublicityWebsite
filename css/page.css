@@ -86,13 +86,13 @@
    border-radius: 5px;
 }
 
-/* .area .video-area .place iframe{
+.area .video-area .place div{
    height: 300px;
    width: 100%;
    object-fit: cover;
    margin-bottom: 10px;
    border-radius: 5px;
-} */
+}
 
  
 .area .video-area .place h3{
