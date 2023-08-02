@@ -86,6 +86,14 @@
    border-radius: 5px;
 }
 
+.area .video-area .place iframe{
+   height: 300px;
+   width: 100%;
+   object-fit: cover;
+   margin-bottom: 10px;
+   border-radius: 5px;
+}
+
 .area .video-area .place h3{
    font-size: 20px;
    font-family: 'Kaushan Script', cursive;
